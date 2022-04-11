@@ -13,7 +13,7 @@
     $lastName = $_POST['lName'];
     //$firstName = $_REQUEST['fName'];
     //$lastName = $_REQUEST['lName'];
-    echo "Thank you for filling out the scholarship form, " . $firstName . " " . $lastName . ".";
+    echo "Thank you for filling out the scholarkship form, " . $firstName . " " . $lastName . ".";
 ?>
    
 </body>
