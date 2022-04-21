@@ -17,5 +17,10 @@ mlaasMain.config(function($routeProvider, $locationProvider){
         }
     )
 
-
+    .when("/aboutus",
+        {
+            title: "About us - MLAAS",
+            templateUrl: "pages/aboutus.htm"
+        }
+    )
 });
