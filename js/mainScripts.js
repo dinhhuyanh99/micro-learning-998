@@ -10,6 +10,12 @@ mlaasMain.config(function($routeProvider, $locationProvider){
             templateUrl: "pages/login.htm"
         }
     )
+    .when("/dashboard",
+        {
+            title: "Dashboard - MLAAS",
+            templateUrl: "pages/dashboard.htm"
+        }
+    )
 
 
 });
