@@ -23,4 +23,11 @@ mlaasMain.config(function($routeProvider, $locationProvider){
             templateUrl: "pages/aboutus.htm"
         }
     )
+
+     .when("/coursemanagement",
+        {
+            title: "Course management - MLAAS",
+            templateUrl: "pages/coursemanagement.htm"
+        }
+    )
 });

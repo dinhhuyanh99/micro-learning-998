@@ -1,0 +1,252 @@
+<html>
+
+<head>
+	<title> Course Management </title>
+
+	<script>
+		function showSelection()
+		{
+			//get subject
+			var inputField1 = document.getElementById("input1")
+			var subject1 = inputField1.value;
+
+			//display subject
+			var subjectSpan = document.getElementById("subjectDisplay")
+			subjectSpan.innerHTML = "You have selected : "
+									+ subject1
+
+		}
+		
+
+	</script>
+</head>
+
+<body>
+
+	mlaas-logo.png
+	<a href="wait API for EmployeeId">
+    				Hello Harry (ID AAA111)
+    				</a>
+    <br />
+    <br />
+
+	Search course by code (Example: IDLE420)
+	<br />
+	<br />
+
+	Subject Code:
+	<input type="text" size="10" id="input1" />
+	<br />
+
+
+	<br />
+	<br />
+
+	<button onClick="showSelection();">
+		Show result
+	</button>
+
+	<br />
+	<br />
+
+	<span id="subjectDisplay">
+		
+	</span>
+
+
+	<form action="wait API for course situation" method="get">
+
+	<table border="3">
+		<tr>
+			<th>Subject Code</th>
+			<th>Subject Name</th>
+			<th>Time Period - (start date / duration time)</th>
+			<th>Operating Status</th>
+			<th>Student Number</th>
+			<th>Course File</th>
+		</tr>
+
+		<tr>
+			<td>
+				MILG101
+			</td>
+			<td>
+				Micro Learning (beginner level)
+			</td>
+			<td>
+				15-01-2022 / 24 weeks
+				<br />
+				with a calendar icon
+			</td>
+			<td>
+				in progress
+				<br />
+				<select name="atype">
+					<option value="in progress">
+					in progress
+					</option>
+
+					<option value="end progress">
+					end progress
+					</option>
+
+					<option value="pending">
+					pending
+					</option>
+
+				</select>
+			</td>
+			<td>
+				<a href="wait API for student number">
+    				33
+    				</a>
+			</td>
+			<td>
+				<a href="wait API for file management">
+    				shoulda have a file icon
+    				</a>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				MILG121
+			</td>
+			<td>
+				Micro Learning (medium level)
+			</td>
+			<td>
+				15-04-2022 / 14 weeks
+				<br />
+				with a calendar icon
+			</td>
+			<td>
+				in progress
+				<br />
+				<select name="atype">
+					<option value="in progress">
+					in progress
+					</option>
+
+					<option value="end progress">
+					end progress
+					</option>
+
+					<option value="pending">
+					pending
+					</option>
+
+				</select>
+			</td>
+			<td>
+				<a href="wait API for student number">
+    				12
+    				</a>
+			</td>
+			<td>
+				<a href="wait API for file management">
+    				shoulda have a file icon
+    				</a>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				MILG141
+			</td>
+			<td>
+				Micro Learning (advanced level)
+			</td>
+			<td>
+				15-06-2022 / 10 weeks
+				<br />
+				with a calendar icon
+			</td>
+			<td>
+				pending
+				<br />
+				<select name="atype">
+					<option value="in progress">
+					in progress
+					</option>
+
+					<option value="end progress">
+					end progress
+					</option>
+
+					<option value="pending">
+					pending
+					</option>
+
+				</select>
+			</td>
+			<td>
+				<a href="wait API for student number">
+    				1
+    				</a>
+			</td>
+			<td>
+				<a href="wait API for file management">
+    				shoulda have a file icon
+    				</a>
+			</td>
+		</tr>
+
+	</table>
+
+	</form>
+
+
+<form action="wait API for course situation" method="get">
+
+	<table border="3">
+		<tr>
+			<th>Course Activities</th>
+		</tr>
+
+		<tr>
+			<td>
+				All courses in management (Employee ID AAA111)
+			</td>
+			<td>
+				<input type="checkbox" name="course" value="1" /> Micro Learning (beginner level)
+				<br />
+
+				<input type="checkbox" name="course" value="2" /> Micro Learning (medium level)
+				<br />
+
+				<input type="checkbox" name="course" value="3" /> Micro Learning (advanced level)
+				<br />
+
+				<input type="checkbox" name="course" value="4" /> English History
+
+			</td>
+		</tr>
+
+
+		<tr>
+			<td>
+				File management
+			</td>
+			<td>
+				<input type="input" style="width:500px; height:400px;" name="query">
+				<br />
+				Drag the desired file into this area
+			</td>
+		</tr>
+
+		
+
+		
+
+		
+	</table>
+
+	</form>
+
+
+
+
+</body>
+
+</html>
