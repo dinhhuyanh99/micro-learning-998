@@ -4,3 +4,8 @@
     padding: 5px 10px 5px 10px;
     margin: 0px;
 }
+
+
+/*To make the card hyperlinks black
+.link { color: #01579b;}   /* CSS link color (#01579b light-blue darken-4)
+.link:hover {color: 0288d1;}/* CSS link hover (#0288d1 light-blue darken-2) */
