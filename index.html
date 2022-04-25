@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="mlaasMain">
+
 <head>
+    <base href="/" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/favicon.png" />
     <link rel="icon" type="image/png" href="./assets/img/mlaas-logo-blue.png" />
-    <meta http-equiv="Pragma" content="no-cache"/>
-    <meta http-equiv="Expires" content="-1"/>
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
     <title>Micro Learning Resource Management Platform</title>
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
-    <script type="text/javascript" src="./js/angular.min.js"></script>
-    <script type="text/javascript" src="./js/angular-route.min.js"></script>
-    <base href="/"/>
+    <script type="text/javascript" src="./js/angular/angular.min.js"></script>
+    <script type="text/javascript" src="./js/angular/angular-route.min.js"></script>
 </head>
+
 <body>
     <nav>
         <div class="nav-wrapper">
             <!--using svg file for better logo quality-->
-            <a href="index.html" class="brand-logo"><img class="navbar-logo" src="./assets/img/mlaas-svg-logo.svg"></a>
+            <a href="/" class="brand-logo"><img class="navbar-logo" src="./assets/img/mlaas-svg-logo.svg"></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="/login">Login</a></li>
                 <li><a href="/coursemanagement">Course Management</a></li>
@@ -31,15 +33,9 @@
         </div>
     </nav>
     <div class="container" ng-view></div>
-    <center>
-
-    </center>
-
-
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script type="text/javascript" src="./js/mainScripts.js"></script>
-    <!-- for initialising charts-->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </body>
+
 </html>
