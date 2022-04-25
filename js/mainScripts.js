@@ -1,4 +1,4 @@
-var mlaasMain = angular.module('mlaasMain', ['ngRoute']);
+var mlaasMain = angular.module("mlaasMain", ['ngRoute']);
 
 mlaasMain.config(function($routeProvider, $locationProvider) {
     $locationProvider.hashPrefix('');
@@ -10,7 +10,7 @@ mlaasMain.config(function($routeProvider, $locationProvider) {
         })
         .when("/dashboard", {
             title: "Dashboard - MLAAS",
-            templateUrl: "pages/dashboard.htm"
+            templateUrl: "pages/dashboard.htm",
         })
         .when("/aboutus", {
             title: "About us - MLAAS",

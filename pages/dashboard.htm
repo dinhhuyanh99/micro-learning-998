@@ -1,150 +1,104 @@
-
-<div class="main-content">
-
-    <div class="row">
-        <div class="col s12 m6">
-            <div class="card blue-grey lighten-5">
-                <div class="card-content black-text">
-                    <span class="card-title">Student Summary</span>
-                    <div class="card-body table-responsive">
-                        <table class="table table-hover">
-                            <thead class="text-warning">
+<div class="row">
+    <div class="col s12 m6">
+        <div class="card">
+            <div class="card-content black-text">
+                <span class="card-title">Student Summary</span>
+                <div class="card-body table-responsive">
+                    <table class="table table-hover">
+                        <thead class="text-warning">
                             <th>ID</th>
                             <th>Name</th>
                             <th>Course</th>
                             <th>Completed Modules %</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Dakota Rice</td>
+                                <td>Course 1</td>
+                                <td>80%</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Minerva Hooper</td>
+                                <td>Course 3</td>
+                                <td>10%</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Sage Rodriguez</td>
+                                <td>Course 2</td>
+                                <td>0%</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Philip Chaney</td>
+                                <td>Course 1</td>
+                                <td>100%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="card-action">
+
+                    <a href="#">This is a link</a>
+                    <a href="#">This is a link</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col s12 m6">
+            <div class="card">
+                <div class="card-content black-text">
+                    <span class="card-title">Students Enrolled by Course</span>
+                    <div class="card-body table-responsive">
+                        <table class="table table-hover">
+                            <thead class="text-warning">
+                                <th>ID</th>
+                                <th>Course</th>
+                                <th>Number of Students</th>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>1</td>
-                                    <td>Dakota Rice</td>
                                     <td>Course 1</td>
-                                    <td>80%</td>
+                                    <td>39</td>
+
                                 </tr>
                                 <tr>
                                     <td>2</td>
-                                    <td>Minerva Hooper</td>
-                                    <td>Course 3</td>
-                                    <td>10%</td>
+                                    <td>Course 2</td>
+                                    <td>10</td>
+
                                 </tr>
                                 <tr>
                                     <td>3</td>
-                                    <td>Sage Rodriguez</td>
-                                    <td>Course 2</td>
-                                    <td>0%</td>
+                                    <td>Course 3</td>
+                                    <td>8</td>
+
                                 </tr>
                                 <tr>
                                     <td>4</td>
-                                    <td>Philip Chaney</td>
-                                    <td>Course 1</td>
-                                    <td>100%</td>
+                                    <td>Course 4</td>
+                                    <td>100</td>
+
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                     <div class="card-action">
-
                         <a href="#">This is a link</a>
                         <a href="#">This is a link</a>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col s12 m6">
-                <div class="card blue-grey lighten-5">
-                    <div class="card-content black-text">
-                        <span class="card-title">Students Enrolled by Course</span>
-                        <div class="card-body table-responsive">
-                            <table class="table table-hover">
-                                <thead class="text-warning">
-                                <th>ID</th>
-                                <th>Course</th>
-                                <th>Number of Students</th>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Course 1</td>
-                                        <td>39</td>
-
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Course 2</td>
-                                        <td>10</td>
-
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>Course 3</td>
-                                        <td>8</td>
-
-                                    </tr>
-                                    <tr>
-                                        <td>4</td>
-                                        <td>Course 4</td>
-                                        <td>100</td>
-
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="card-action">
-                            <a href="#">This is a link</a>
-                            <a href="#">This is a link</a>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
 </div>
-
 <!-- this part isnt working-->
-<div class="row">
-    <div class="col s12 m6">
-        <canvas id="myChart" width="400" height="400"></canvas>
-    </div>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script>
-        const labels = [
-            'January',
-            'February',
-            'March',
-            'April',
-            'May',
-            'June',
-        ];
-
-        const data = {
-            labels: labels,
-            datasets: [{
-                label: 'My First dataset',
-                backgroundColor: 'rgb(255, 99, 132)',
-                borderColor: 'rgb(255, 99, 132)',
-                data: [0, 10, 5, 2, 20, 30, 45],
-            }]
-        };
-
-        const config = {
-            type: 'line',
-            data: data,
-            options: {}
-        };
-    </script>
-
-    <script>
-        const myChart = new Chart(
-            document.getElementById('myChart'),
-            config
-        );
-    </script>
-
-
-
+<div class="row" ng-controller="graphController" ng-init="loadGraph()">
+    <canvas id="myChart" width="400" height="400"></canvas>
+</div>
