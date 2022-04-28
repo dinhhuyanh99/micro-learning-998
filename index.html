@@ -17,27 +17,35 @@
     <script type="text/javascript" src="./js/angular/angular.min.js"></script>
     <script type="text/javascript" src="./js/angular/angular-route.min.js"></script>
     <script type="text/javascript" src="./js/chartjs/chart.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
     <nav>
-        <div class="nav-wrapper">
+        <div class="nav-wrapper" ng-controller="dropdownController" ng-init="initPage()">
             <!--using svg file for better logo quality-->
             <a href="/" class="brand-logo"><img class="navbar-logo" src="./assets/img/mlaas-svg-logo.svg"></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="/login">Login</a></li>
-                <li><a href="/coursemanagement">Course Management</a></li>
+                <!-- Dropdown Trigger -->
+                <li><a class="dropdown-trigger" href="/coursemanagement" data-target="coursedropdown">Course Management<i class="material-icons right">arrow_drop_down</i></a></li>
                 <li><a href="/dashboard">Dashboard</a></li>
                 <li><a href="/aboutus">About Us</a></li>
-
             </ul>
         </div>
     </nav>
+    <!-- Course Mgmt dropdown -->
+    <ul id="coursedropdown" class="dropdown-content">
+        <li><a href="/activitylibrary">Activity Library</a></li>
+        <li><a href="/contentcreation">Content Creation</a></li>
+        <li><a href="/courselist">Course List</a></li>
+    </ul>
     <div class="container" ng-view></div>
     <!-- Compiled and minified JavaScript -->
     <script type="text/javascript" src="./assets/materialize/materialize.min.js"></script>
     <script type="text/javascript" src="./js/mainScripts.js"></script>
     <script type="text/javascript" src="./js/dashboardScripts.js"></script>
+    <script type="text/javascript" src="./js/coursemanagement.js"></script>
 </body>
 
 </html>

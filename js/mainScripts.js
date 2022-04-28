@@ -20,4 +20,16 @@ mlaasMain.config(function($routeProvider, $locationProvider) {
             title: "Course management - MLAAS",
             templateUrl: "pages/coursemanagement.htm"
         })
+        .when("/activitylibrary", {
+            title: "Course Activity Library - MLAAS",
+            templateUrl: "pages/activitylibrary.htm"
+        })
+        .when("/contentcreation", {
+            title: "Course Content Creation - MLAAS",
+            templateUrl: "pages/contentcreation.htm"
+        })
+        .when("/courselist", {
+            title: "Course Content Creation - MLAAS",
+            templateUrl: "pages/courselist.htm"
+        })
 });
