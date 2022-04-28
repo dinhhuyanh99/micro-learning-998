@@ -29,7 +29,11 @@ mlaasMain.config(function($routeProvider, $locationProvider) {
             templateUrl: "pages/contentcreation.htm"
         })
         .when("/courselist", {
-            title: "Course Content Creation - MLAAS",
+            title: "Course List - MLAAS",
             templateUrl: "pages/courselist.htm"
+        })
+        .when("/profile", {
+            title: "Personal Profile - MLAAS",
+            templateUrl: "pages/profile.htm"
         })
 });

@@ -23,6 +23,9 @@
         width: 50%;
     }
 }
+.profilecard-box {
+    padding: 24px 48px 24px 48px;
+}
 
 
 /*To make the card hyperlinks black
