@@ -36,4 +36,20 @@ mlaasMain.config(function($routeProvider, $locationProvider) {
             title: "Personal Profile - MLAAS",
             templateUrl: "pages/profile.htm"
         })
+        .when("/studentManagement", {
+            title: "Student management - MLAAS",
+            templateUrl: "pages/studentManagement.htm"
+        })
+        .when("/studentManagement_WebProg", {
+            title: "Student management - MLAAS",
+            templateUrl: "pages/studentManagement_WebProg.htm"
+        })
+        .when("/studentManagement_Network", {
+            title: "Student management - MLAAS",
+            templateUrl: "pages/studentManagement_Network.htm"
+        })
+        .when("/studentManagement_JS", {
+            title: "Student management - MLAAS",
+            templateUrl: "pages/studentManagement_JS.htm"
+        })
 });
