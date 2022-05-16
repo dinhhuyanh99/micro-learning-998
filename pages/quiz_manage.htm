@@ -6,134 +6,137 @@
     
     <label>Select Course</label>
     <select class="browser-default">
-        <option value="" disabled selected>Choose your option</option>
-        <option value="1">Course 1</option>
+        <option value="" >Choose your option</option>
+        <option value="1" selected>Course 1</option>
         <option value="2">Course 2</option>
         <option value="3">Course 3</option>
     </select>
     <!--quiz name-->
-    <div class="row">
-        <div class="col s12">
-          Quiz Name:
-        <div class="input-field inline">
-            <input id="quiz_name" type="text">
-            <label for="quiz_name">enter quiz name</label>
-        </div>
-        </div>
-    </div>
-    <!--Question 1-->
-    <div class="row">
-        <div class="col s12">
-          Question 1:
-        <div class="input-field inline">
-            <input id="question1" type="text" class="validate">
-            <label for="question1">enter question 1</label>
-        </div>
-        </div>
-    </div>
+
     <!--multiple choice questions-->
     <form action="#">
-        <p>
-          <label>
-            <input class="with-gap" name="group1" type="radio" checked />
-            <span>Option 1</span>
-          </label>
-        </p>
-        <p>
-          <label>
-            <input class="with-gap" name="group1" type="radio" />
-            <span>Option 2</span>
-          </label>
-        </p>
-        <p>
-          <label>
-            <input class="with-gap" name="group1" type="radio"  />
-            <span>Option 3</span>
-          </label>
-        </p>
-    </form>
-    <!--Question 2-->
-    <div class="row">
-        <div class="col s12">
-            Question 2:
-            <div class="input-field inline">
+        <form action="#">
+            <div class="row">
+                <div class="input-field col s12">
+                  <input placeholder="" id="quiz_name" type="text" class="validate">
+                  <label for="quiz_name">Quiz Name</label>
+                </div>
+            </div>
+            <div class="input-field col s12">
+                <input id="question1" type="text">
+                <label for="quiz_name">Type Question 1</label>
+            </div>
+            <p>
+              <label>
+                <input class="with-gap" name="group1" type="radio" checked />
+                <span>Option 1</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input class="with-gap" name="group1" type="radio" />
+                <span>Option 2</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input class="with-gap" name="group1" type="radio"  />
+                <span>Option 3</span>
+              </label>
+            </p>
+            <!--Question 2-->
+            <div class="input-field col s12">
                 <input id="question2" type="text">
-                <label for="question2">enter question 2</label>
+                <label for="question2">Type Question 2</label>
             </div>
-        </div>
-    </div>
-    
-    <form action="#">
-        <p>
-        <label>
-            <input class="with-gap" name="group1" type="radio" checked />
-            <span>Option A</span>
-        </label>
-        </p>
-        <p>
-        <label>
-            <input class="with-gap" name="group1" type="radio" />
-            <span>Option B</span>
-        </label>
-        </p>
-        <p>
-        <label>
-            <input class="with-gap" name="group1" type="radio"  />
-            <span>Option C</span>
-        </label>
-        </p>
-    </form>
-    <!--Question 3-->
-    <div class="row">
-        <div class="col s12">
-            Question 3:
-            <div class="input-field inline">
+            <p>
+            <label>
+                <input class="with-gap" name="group1" type="radio" checked />
+                <span>Option A</span>
+            </label>
+            </p>
+            <p>
+            <label>
+                <input class="with-gap" name="group1" type="radio" />
+                <span>Option B</span>
+            </label>
+            </p>
+            <p>
+            <label>
+                <input class="with-gap" name="group1" type="radio"  />
+                <span>Option C</span>
+            </label>
+            </p>
+            <!--multiple choice q3-->
+            <div class="input-field col s12">
                 <input id="question3" type="text">
-                <label for="question3">enter question 3</label>
+                <label for="question3">Type Question 3</label>
             </div>
-        </div>
-    </div>
-    <!--multiple choice q3-->
-    <form action="#">
-        <p>
-        <label>
-            <input class="with-gap" name="group1" type="radio" checked />
-            <span>Option A</span>
-        </label>
-        </p>
-        <p>
-        <label>
-            <input class="with-gap" name="group1" type="radio" />
-            <span>Option B</span>
-        </label>
-        </p>
-        <p>
-        <label>
-            <input class="with-gap" name="group1" type="radio"  />
-            <span>Option C</span>
-        </label>
-        </p>
-    </form>
-    <!--Question 4-->
-    <div class="row">
-        <div class="col s12">
-            Question 4:
-            <div class="input-field inline">
+            <p>
+            <label>
+                <input class="with-gap" name="group1" type="radio" checked />
+                <span>Option A</span>
+            </label>
+            </p>
+            <p>
+            <label>
+                <input class="with-gap" name="group1" type="radio" />
+                <span>Option B</span>
+            </label>
+            </p>
+            <p>
+            <label>
+                <input class="with-gap" name="group1" type="radio"  />
+                <span>Option C</span>
+            </label>
+            </p>
+            <!--Question 4-->
+            <div class="input-field col s12">
                 <input id="question4" type="text">
-                <label for="question4">enter question 4</label>
+                <label for="question4">Type Question 4</label>
             </div>
-        </div>
-    </div>
-    <!--Question 5-->
-    <div class="row">
-        <div class="col s12">
-          Question 5:
-          <div class="input-field inline">
-            <input id="question5" type="text">
-            <label for="question5">enter question 5</label>
-          </div>
-        </div>
-    </div>
+            <p>
+            <label>
+                <input class="with-gap" name="group1" type="radio" checked />
+                <span>Option A</span>
+            </label>
+            </p>
+            <p>
+            <label>
+                <input class="with-gap" name="group1" type="radio" />
+                <span>Option B</span>
+            </label>
+            </p>
+            <p>
+            <label>
+                <input class="with-gap" name="group1" type="radio"  />
+                <span>Option C</span>
+            </label>
+            </p>
+            <!--Question 5-->
+            <div class="input-field col s12">
+                <input id="question5" type="text">
+                <label for="question5">Type Question 5</label>
+            </div>
+            <p>
+            <label>
+                <input class="with-gap" name="group1" type="radio" checked />
+                <span>Option A</span>
+            </label>
+            </p>
+            <p>
+            <label>
+                <input class="with-gap" name="group1" type="radio" />
+                <span>Option B</span>
+            </label>
+            </p>
+            <p>
+            <label>
+                <input class="with-gap" name="group1" type="radio"  />
+                <span>Option C</span>
+            </label>
+            </p>
     <a class="waves-effect waves-light btn"><i class="material-icons left">save</i>Update</a>
+    </form>
     
 </div>
