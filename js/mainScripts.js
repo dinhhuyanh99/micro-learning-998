@@ -52,4 +52,12 @@ mlaasMain.config(function($routeProvider, $locationProvider) {
             title: "Student management - MLAAS",
             templateUrl: "pages/studentManagement_JS.htm"
         })
+        .when("/quiz_create", {
+            title: "Create Quiz - teacher",
+            templateUrl: "pages/quiz_create.htm"
+        })
+        .when("/quiz_manage", {
+            title: "Manage Quiz - teacher",
+            templateUrl: "pages/quiz_manage.htm"
+        })
 });

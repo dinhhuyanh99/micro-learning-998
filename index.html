@@ -28,7 +28,8 @@
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="/login">Login</a></li>
                 <!-- Dropdown Trigger -->
-                <li><a class="dropdown-trigger" href="/coursemanagement" data-target="coursedropdown">Course Management<i class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a class="dropdown-trigger" href="#" data-target="coursedropdown">Course Management<i class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a class="dropdown-trigger" href="#" data-target="quizzesdropdown">Quizzes<i class="material-icons right">arrow_drop_down</i></a> </li>
                 <li><a href="/dashboard">Dashboard</a></li>
                 <li><a href="/aboutus">About Us</a></li>
                 <li><a href="/studentManagement">Student Management</a></li>
@@ -41,6 +42,11 @@
         <li><a href="/activitylibrary">Activity Library</a></li>
         <li><a href="/contentcreation">Content Creation</a></li>
         <li><a href="/courselist">Course List</a></li>
+    </ul>
+    <!-- Quizzes dropdown -->   
+    <ul id="quizzesdropdown" class="dropdown-content">
+        <li><a href="/quiz_create">Create Quiz</a></li>
+        <li><a href="/quiz_manage">Manage Quiz</a></li>
     </ul>
     <div class="container" ng-view></div>
     <!-- Compiled and minified JavaScript -->

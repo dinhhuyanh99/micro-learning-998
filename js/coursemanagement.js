@@ -5,9 +5,9 @@ angular.module("mlaasMain").controller("dropdownController", function($scope){ /
     };
 });
 
-//sort controller for table sorting similar to this https://codepen.io/marcmatias/pen/gxPzvY
-angular.module("mlaasMain").controller("sortController", function($scope){ 
-    $scope.sortTable = function(){
-       
+angular.module("mlaasMain").controller("selectController", function($scope){ //select controller
+    $scope.selectOption = function(){
+        var elems = document.querySelectorAll('select');
+        var instances = M.FormSelect.init(elems, {classes:''});
     };
 });
