@@ -76,4 +76,8 @@ mlaasMain.config(function($routeProvider, $locationProvider) {
             title: "Student Quizzes",
             templateUrl: "pages/student_quiz.htm"
         })
+        .when("/subjectLists_English", {
+            title: "English",
+            templateUrl: "pages/subjectLists_English.htm"
+        })
 });
