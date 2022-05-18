@@ -33,7 +33,8 @@
                 <li><a href="/dashboard">Dashboard</a></li>
                 <li><a href="/aboutus">About Us</a></li>
                 <li><a href="/studentManagement">Student Management</a></li>
-                <li><a href="/profile"><i class="material-icons">account_box</i></a></li>
+                <li><a class="dropdown-trigger" href="#" data-target="profiledropdown">Profile<i class="material-icons right">account_box</i></a></li>
+                <!--<li><a href="/profile">Profile<i class="material-icons">account_box</i></a></li>-->
             </ul>
         </div>
     </nav>
@@ -48,6 +49,13 @@
         <li><a href="/quiz_create">Create Quiz</a></li>
         <li><a href="/quiz_manage">Manage Quiz</a></li>
     </ul>
+    <!-- Account Profile dropdown -->
+    <ul id="profiledropdown" class="dropdown-content">
+        <li><a href="/profile">Profile</a></li>
+        <li><a href="#">Password Change</a></li>
+        <li><a href="#">Billing</a></li>
+    </ul>
+
     <div class="container" ng-view></div>
     <!-- Compiled and minified JavaScript -->
     <script type="text/javascript" src="./assets/materialize/materialize.min.js"></script>
