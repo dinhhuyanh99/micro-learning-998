@@ -60,4 +60,12 @@ mlaasMain.config(function($routeProvider, $locationProvider) {
             title: "Manage Quiz - teacher",
             templateUrl: "pages/quiz_manage.htm"
         })
+        .when("/changePassword", {
+            title: "Change Password",
+            templateUrl: "pages/changePassword.htm"
+        })
+        .when("/billing", {
+            title: "Billing",
+            templateUrl: "pages/billing.htm"
+        })
 });
