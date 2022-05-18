@@ -68,4 +68,12 @@ mlaasMain.config(function($routeProvider, $locationProvider) {
             title: "Billing",
             templateUrl: "pages/billing.htm"
         })
+        .when("/student_courses", {
+            title: "Student Courses",
+            templateUrl: "pages/student_courses.htm"
+        })
+        .when("/student_quiz", {
+            title: "Student Quizzes",
+            templateUrl: "pages/student_quiz.htm"
+        })
 });

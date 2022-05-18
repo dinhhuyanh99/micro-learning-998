@@ -1,6 +1,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
- <div class="container">
+ <div class="container" >
      <!-- Dropdown Trigger -->
     <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Drop Me!</a>
 
@@ -25,7 +25,102 @@
 <br>
 TEST 1 2 3
 <br>
+<div class="input-field col s12" ng-controller="selectController" ng-init="selectOption()" >
+  <select>
+    <option value="" disabled selected>Choose your option</option>
+    <option value="1">Option 1</option>
+    <option value="2">Option 2</option>
+    <option value="3">Option 3</option>
+  </select>
+  <label>Materialize Select</label>
+</div>
 
 
-  <!--good to externalise repeated scripts -->
+<!--START OF CONTENT CREATION PAGE-->
+<div>
+  <h5>Content Creation page</h5>
+  <form action="" method="">
+    <table>
+      <thead>
+        <tr>
+            <th></th>
+            <th></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>File Upload</td>
+          <td>
+            <input type="file" id="myFile" name="filename">
+          </td>
+        </tr>
+        <tr>
+          <td>File Name</td>
+          <td>
+            <div class="input-field col s6">
+              <input placeholder="type file name" id="file_name" type="text" class="validate">
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Description</td>
+          <td>
+            <div class="input-field col s6">
+              <input placeholder="type description" id="file_description" type="text" class="validate">
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Course to Upload</td>
+          <td>
+            <select class="browser-default">
+              <option value="" disabled selected>Choose your course</option>
+              <option value="1">Course 1</option>
+              <option value="2">Course 2</option>
+              <option value="3">Course 3</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Course Chapter</td>
+          <td>
+            <select class="browser-default">
+              <option value="" disabled selected>Choose relevant chapter</option>
+              <option value="1">Chapter 1</option>
+              <option value="2">Chapter 2</option>
+              <option value="3">Chapter 3</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Settings</td>
+          <td>
+            <p>
+              <label>
+                <input class="with-gap" name="hidden" type="radio" checked />
+                <span>Hidden</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input class="with-gap" name="visible" type="radio"/>
+                <span>Visible</span>
+              </label>
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+              <i class="material-icons right">send</i>
+            </button>
+          </td>     
+        </tr>
+      </tbody>
+    </table>
+  </form>
+
+</div>
 
