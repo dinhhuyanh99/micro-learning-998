@@ -11,3 +11,10 @@ angular.module("mlaasMain").controller("selectController", function($scope){ //s
         var instances = M.FormSelect.init(elems, {classes:''});
     };
 });
+
+angular.module("mlaasMain").controller("datepickerController", function($scope){ //date picker controller
+    $scope.datePicker = function(){
+        var elems = document.querySelectorAll('.datepicker');
+        var instances = M.Datepicker.init(elems, {});
+    };
+});

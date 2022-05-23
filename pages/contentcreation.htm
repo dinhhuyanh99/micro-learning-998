@@ -1,160 +1,88 @@
 <div class="container">
-    <h1>CONTENT CREATION PAGE</h1>
-
-
-<div>
-                  
-  <head>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var elems = document.querySelectorAll('select');
-            var instances = M.FormSelect.init(elems, options);
-        });
-    </script>
-    <script 
-        function loadDoc() {
-          var xhttp = new XMLHttpRequest();
-          xhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-              document.getElementById("demo").innerHTML = this.responseText;
-            }
-          };
-          xhttp.open("GET", "ajax_info.txt", true);
-          xhttp.send();
-      }>
-    </script>
-<!--
-    <script>
-      var oSpan = document.getElementById('fileImage');
-      var oImg = document.createElement('img');   //创建一个img标签
-      oImg.src = 'fileIcon_1.jpg';    //给img标签添加src属性
-      oSpan.appendChild(oImg);    //将img标签添加到span标签里面。
-    </script>
--->
-  </head>
-
-
-  <form action="wait API for course situation" method="get">
-
-  <table border="3">
-    <tr>
-      <th>Course Activities</th>
-    </tr>
-
-    <tr>
-      <td>
-        File management
-      </td>
-      <td>
-        
-        <nav role="navigation">
-          <a href="https://Course.Material.com">Course Material</a>
-          <a href="https://Student.Homework.com">Student Homework</a>
-        </nav>
-
-        <form class="box" method="post" action="" enctype="multipart/form-data">
-          <div class="box__input">
-            <input class="box__file" type="file" name="files[]" id="file" data-multiple-caption="{count} files selected" multiple />
-            <label for="file"><strong>Choose a file</strong><span style="width:100px; height:100px; border:1px solid #ccc; display:block" id="fileImage" class="box__dragndrop"> or drag it here</span>.</label>
-            <br/>
-            <button class="box__button" type="submit">Upload</button>
-          </div>
-
-          <span ></span>
-
+    <div class="section">
+        <h5>Content Upload page</h5>
+    </div>
+    <form action="" method="">
+      <table>
+        <thead>
+          <tr>
+              <th></th>
+              <th></th>
+          </tr>
+        </thead>
+  
+        <tbody>
+          <tr>
+            <td>File Upload</td>
+            <td>
+              <input type="file" id="myFile" name="filename">
+            </td>
+          </tr>
+          <tr>
+            <td>File Name</td>
+            <td>
+              <div class="input-field col s6">
+                <input placeholder="type file name" id="file_name" type="text" class="validate">
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Description</td>
+            <td>
+              <div class="input-field col s6">
+                <input placeholder="type description" id="file_description" type="text" class="validate">
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Course to Upload</td>
+            <td>
+              <select class="browser-default">
+                <option value="" disabled selected>Choose your course</option>
+                <option value="1">Course 1</option>
+                <option value="2">Course 2</option>
+                <option value="3">Course 3</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Course Chapter</td>
+            <td>
+              <select class="browser-default">
+                <option value="" disabled selected>Choose relevant chapter</option>
+                <option value="1">Chapter 1</option>
+                <option value="2">Chapter 2</option>
+                <option value="3">Chapter 3</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Settings</td>
+            <td>
+              <p>
+                <label>
+                  <input class="with-gap" name="hidden" type="radio" checked />
+                  <span>Hidden</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input class="with-gap" name="visible" type="radio"/>
+                  <span>Visible</span>
+                </label>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                <i class="material-icons right">send</i>
+              </button>
+            </td>     
+          </tr>
+        </tbody>
+      </table>
     </form>
-        <br />
-        Drag the desired file into this area
-      </td>
-    </tr>
-
-    <tr>
-        <td>
-            File Name <span style="color: red;">*</span> : <input type="text" name="fileName" placeholder="Input your file name">
-        </td>
-    </tr>
-
-    <tr>
-        <td>
-            Description <span style="color: red;">*</span> : <input type="text" name="fileName" placeholder="Input your file description">
-        </td>
-    </tr>
-
-    <tr>
-        <td>
-            Course to Upload <span style="color: red;">*</span> :               
-            <form action="#">
-                <p>
-                    <label>
-                        <input name="courseList" type="radio" checked />
-                        <span style="color: darkgreen;"> [MILG121]Micro Learning </span>
-                    </label>
-                </p>
-                <p>
-                    <label>
-                        <input name="courseList" type="radio" />
-                        <span style="color: darkgreen;"> [MILG101]Micro Learning </span>
-                    </label>
-                </p>
-                <p>
-                    <label>
-                        <input name="courseList" type="radio"  />
-                        <span style="color: darkgreen;"> [CSIT814]Web Programming </span>
-                    </label>
-                </p>
-                <p>
-                    <label>
-                        <input name="courseList" type="radio"  />
-                        <span style="color: darkgreen;"> [CSIT815]Data Management and Security </span>
-                 </label>
-                </p>
-            </form>
-        </td>
-    </tr>
-
-    <tr>
-        <td>
-            Course Chapter :
-            <input type="text" name="courseChapter">
-        </td>
-    </tr>
-
-    <tr>
-        <td>
-            <span style="color: grey;">Settings</span> 
-        </td>
-        <td>
-            <form action="#">
-                <p>
-                    <label>
-                        <input name="visibility" type="radio"  />
-                        <span> Visible </span>
-                    </label>
-                </p>
-                <p>
-                    <label>
-                        <input name="visibility" type="radio"  />
-                        <span> Hidden </span>
-                    </label>
-                </p>
-            </form>
-        </td>
-    </tr>
-
-
-</div>
-
-
-
-<!--
-<footer class="col s12 m6">
-    <p>
-      <strong>Upload courses related files with approved format</strong>
-    </p>
-    <p>Contact system manager <a href="http://www.contact.manager" target="_blank">Micro-Learning Back-Support</a>
-    </p>
-</footer>
--->
-
+  
 </div>
