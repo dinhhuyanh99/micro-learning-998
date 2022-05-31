@@ -80,4 +80,8 @@ mlaasMain.config(function($routeProvider, $locationProvider) {
             title: "English",
             templateUrl: "pages/subjectLists_English.htm"
         })
+        .when("/signup", {
+            title: "Sign Up",
+            templateUrl: "pages/signup.htm"
+        })
 });
